@@ -1,0 +1,35 @@
+package com.accurate.model.invoice;
+
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+
+public class LsmDO {
+
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	Integer lsmId;
+	
+	@OneToMany
+	CompanyDO companyDO;
+
+	public Integer getLsmId() {
+		return lsmId;
+	}
+
+	public void setLsmId(Integer lsmId) {
+		this.lsmId = lsmId;
+	}
+
+	public CompanyDO getCompanyDO() {
+		return companyDO;
+	}
+
+	public void setCompanyDO(CompanyDO companyDO) {
+		this.companyDO = companyDO;
+	}
+	
+	
+
+}

@@ -1,0 +1,10 @@
+package com.accurate.model.invoice;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="customer")
+public class CustomerDO {
+
+}

@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Thu Jul 20 16:23:21 IST 2023
+org.eclipse.jst.j2ee.server\:/binary\:C\:\\Users\\Dell\\.m2\\repository\\org\\springframework\\spring-web\\4.3.2.RELEASE\\spring-web-4.3.2.RELEASE.jar=WEB-INF/lib/spring-web-4.3.2.RELEASE.jar
+org.eclipse.jst.j2ee.server\:/binary\:C\:\\Users\\Dell\\.m2\\repository\\org\\springframework\\spring-web\\5.3.8\\spring-web-5.3.8.jar=WEB-INF/lib/spring-web-5.3.8.jar

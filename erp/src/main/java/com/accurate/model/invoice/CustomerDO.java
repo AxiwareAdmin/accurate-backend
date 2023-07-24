@@ -45,7 +45,40 @@ public class CustomerDO {
 	@Column(name = "Customer_Name")
 	String customerName;
 	
+	@Column(name="ShippingAddress1")
+	String shippingAddress1;
 	
+	public String getShippingAddress1() {
+		return shippingAddress1;
+	}
+
+	public void setShippingAddress1(String shippingAddress1) {
+		this.shippingAddress1 = shippingAddress1;
+	}
+
+	public String getShippingAddress2() {
+		return shippingAddress2;
+	}
+
+	public void setShippingAddress2(String shippingAddress2) {
+		this.shippingAddress2 = shippingAddress2;
+	}
+
+	@Column(name="ShippingAddress2")
+	String shippingAddress2;
+	
+	@Column(name="PO_No")
+	String poNumber;
+
+	
+	
+	public String getPoNumber() {
+		return poNumber;
+	}
+
+	public void setPoNumber(String poNumber) {
+		this.poNumber = poNumber;
+	}
 
 	public Integer getCustomerId() {
 		return customerId;

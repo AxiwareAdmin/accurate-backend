@@ -7,6 +7,7 @@ import org.apache.log4j.Logger;
 import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -15,7 +16,8 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.accurate.action.invoice.InvoiceController;
 import com.accurate.model.invoice.CustomerDO;
-import com.accurate.model.invoice.LsmDO;
+import com.accurate.model.invoice.InvoiceDO;
+import com.accurate.model.invoice.InvoiceProductDO;
 @Repository
 public class InvoiceDao {
 	
@@ -30,13 +32,6 @@ public class InvoiceDao {
 		LOGGER.info("InvoiceDao :: getCustomerList :: Start ");
 		List<CustomerDO> custList = new ArrayList<CustomerDO>();
 		try {
-//			Session session = hibernateUtl.createSession();
-//			SQLQuery query = session.createSQLQuery("select Customer_Id as customerId , Customer_Name as customerName from customer");
-//			query.addScalar("customerId",StandardBasicTypes.INTEGER);
-//			query.addScalar("customerName",StandardBasicTypes.STRING);
-//			
-//			query.setResultTransformer(Transformers.aliasToBean(CustomerDO.class));
-//			custList=query.list();
 			
 			Session session=getSession();
 			Criteria criteria=session.createCriteria(CustomerDO.class);
@@ -49,6 +44,82 @@ public class InvoiceDao {
 		LOGGER.info("InvoiceDao :: getCustomerList method end");
 		return custList;
 	}
+	
+	public CustomerDO getCustomerById(Integer custId){
+		LOGGER.info("InvoiceDao :: getCustomerById :: Start ");
+		CustomerDO customerDO=null;
+		try {
+			
+			Session session=getSession();
+			Criteria criteria=session.createCriteria(CustomerDO.class);
+			criteria.add(Restrictions.eq("customerId",custId));
+			customerDO=(CustomerDO)criteria.uniqueResult();
+			
+			
+		}catch(Exception e) {
+			LOGGER.error("Exception occured in InvoiceDao :: getCustomerById ");
+		}
+		LOGGER.info("InvoiceDao :: getCustomerById method end");
+		return customerDO;
+	}
+	
+	public InvoiceProductDO getProductById(Integer prodId){
+		LOGGER.info("InvoiceDao :: getProductById :: Start ");
+		InvoiceProductDO productDO=null;
+		try {
+			
+			Session session=getSession();
+			Criteria criteria=session.createCriteria(InvoiceProductDO.class);
+			criteria.add(Restrictions.eq("invoiceProductId",prodId));
+			productDO=(InvoiceProductDO)criteria.uniqueResult();
+			
+			
+		}catch(Exception e) {
+			LOGGER.error("Exception occured in InvoiceDao :: getProductById ");
+		}
+		LOGGER.info("InvoiceDao :: getProductById method end");
+		return productDO;
+	}
+	
+	
+
+	public List<InvoiceDO> getInvoiceList(){
+		LOGGER.info("InvoiceDao :: getInvoiceList :: Start ");
+		List<InvoiceDO> invoiceList = new ArrayList<InvoiceDO>();
+		try {
+			
+			Session session=getSession();
+			Criteria criteria=session.createCriteria(InvoiceDO.class);
+			invoiceList=criteria.list();
+			
+			
+		}catch(Exception e) {
+			LOGGER.error("Exception occured in InvoiceDao :: getInvoiceList ");
+		}
+		LOGGER.info("InvoiceDao :: getInvoiceList method end");
+		return invoiceList;
+	}
+	
+	public List<InvoiceProductDO> getInvoiceProductList(){
+		LOGGER.info("InvoiceDao :: getInvoiceProductList :: Start ");
+		List<InvoiceProductDO> invoiceProductList = new ArrayList<InvoiceProductDO>();
+		try {
+			
+			Session session=getSession();
+			Criteria criteria=session.createCriteria(InvoiceProductDO.class);
+			invoiceProductList=criteria.list();
+			
+			
+		}catch(Exception e) {
+			LOGGER.error("Exception occured in InvoiceDao :: getInvoiceProductList ");
+		}
+		LOGGER.info("InvoiceDao :: getInvoiceProductList method end");
+		return invoiceProductList;
+	}
+	
+	
+	
+	
 	
 	
 	public Session getSession() {
@@ -67,12 +138,5 @@ public class InvoiceDao {
 		}
 	}
 	
-	public static void main(String[] args) {
-		ApplicationContext ctx=new ClassPathXmlApplicationContext("applicationContext.xml");
-		Session session=(Session)ctx.getBean("hibernateSessionFactory");
-		Criteria criteria=session.createCriteria(LsmDO.class);
-		
-		System.out.println(criteria.list());
-	}
 	
 }

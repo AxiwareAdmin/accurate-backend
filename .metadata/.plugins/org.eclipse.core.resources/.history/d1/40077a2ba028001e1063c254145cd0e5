@@ -1,0 +1,73 @@
+package com.accurate.model.invoice;
+
+import java.math.BigDecimal;
+import java.sql.Date;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "product")
+public class InvoiceProductDO {
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name = "Product_Id")
+	Integer invoiceProductId;
+
+	@Column(name = "ProductName")
+	String productName;
+
+	@Column(name = "Product_Description")
+	String productDescription;
+
+	@Column(name="Prodcut_Type")
+	String productType;
+	
+	@Column(name="part_code")
+	String partCode;
+	
+	@Column(name = "HSN_Code")
+	String hsnCode;
+
+	@Column(name = "Quantity")
+	Integer quantity;
+
+	@Column(name = "Unit")
+	Integer unit;
+
+	@Column(name = "Rate")
+	BigDecimal rate;
+
+	@Column(name = "category")
+	String category;
+
+	@Column(name = "Applicable_Tax")
+	BigDecimal applicableTax;
+
+	@Column(name = "Opening_Stock")
+	Integer openingStock;
+
+	
+	@Column(name = "Invoice_Date")
+	Date invoice_Date;
+
+		
+	@Column(name = "CreatedBy")
+	String createdBy;
+	
+	@Column(name = "Created_Date")
+	Date Created_Date;
+	
+	@Column(name = "Register_Id")
+	Integer registerId;
+	
+	@Column(name = "User_Id")
+	Integer userId;
+
+
+	
+}

@@ -1,0 +1,5 @@
+package com.accurate.security;
+
+public class SecurityConfig {
+
+}

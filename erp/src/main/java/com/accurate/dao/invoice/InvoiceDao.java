@@ -1,12 +1,15 @@
 package com.accurate.dao.invoice;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.log4j.Logger;
 import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
@@ -117,7 +120,29 @@ public class InvoiceDao {
 		return invoiceProductList;
 	}
 	
-	
+	public String saveInvoice(InvoiceDO invoiceDO) {
+		LOGGER.info("InvoiceDao::saveInvoice::start");
+		
+		try {
+			invoiceDO.setInvoiceProductId(1);
+			invoiceDO.setMonth("Dec");
+			invoiceDO.setCity("Mum");
+			invoiceDO.setIgstValue(new BigDecimal(1));
+			Session session=getSession();
+			Transaction tx=session.beginTransaction();
+			session.save(invoiceDO);
+			session.flush();
+			tx.commit();
+			
+		}catch(Exception e) {
+			LOGGER.info("Exception occured in invoiceDao::saveInvoice::"+e);
+			return "failure";
+		}
+		
+		
+		LOGGER.info("InvoiceDao::saveInvoice::end");
+		return "success";
+	}
 	
 	
 	

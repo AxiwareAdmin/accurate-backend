@@ -4811,3 +4811,478 @@ Caused by: java.net.UnknownHostException: download.eclipse.org
 2023-07-20 16:34:39,231 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2023-07-20 16:34:39,231 [Worker-90] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2023-07-20 16:34:39,231 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 18:34:46,791 [Worker-213] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 18:34:46,791 [Worker-213] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-22 18:34:46,791 [Worker-213] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 18:34:46,791 [Worker-213] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 18:34:50,105 [Worker-214] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 18:34:50,105 [Worker-214] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-22 18:34:50,120 [Worker-214] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 18:34:50,120 [Worker-214] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 18:35:13,414 [Worker-212] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 18:35:13,414 [Worker-212] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-22 18:35:13,416 [Worker-212] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 18:35:13,416 [Worker-212] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 18:35:30,723 [Worker-215] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 18:35:30,723 [Worker-215] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-22 18:35:30,723 [Worker-215] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 18:35:30,723 [Worker-215] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 19:16:30,188 [Worker-214] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 19:16:30,188 [Worker-214] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-22 19:16:30,188 [Worker-214] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 19:16:30,188 [Worker-214] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 19:17:27,890 [Worker-217] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 19:17:27,890 [Worker-217] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-22 19:17:27,905 [Worker-217] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 19:17:27,905 [Worker-217] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 19:17:37,965 [Worker-212] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 19:17:37,967 [Worker-212] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-22 19:17:37,967 [Worker-212] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 19:17:37,967 [Worker-212] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 19:17:52,711 [Worker-214] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 19:17:52,711 [Worker-214] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-22 19:17:52,711 [Worker-214] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 19:17:52,711 [Worker-214] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 19:20:16,565 [Worker-216] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 19:20:16,565 [Worker-216] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-22 19:20:16,565 [Worker-216] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 19:20:16,565 [Worker-216] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 19:21:07,740 [Worker-218] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 19:21:07,743 [Worker-218] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-22 19:21:07,745 [Worker-218] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 19:21:07,747 [Worker-218] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 19:21:11,798 [Worker-219] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 19:21:11,798 [Worker-219] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-22 19:21:11,798 [Worker-219] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 19:21:11,798 [Worker-219] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 19:21:20,037 [Worker-217] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 19:21:20,037 [Worker-217] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-22 19:21:20,037 [Worker-217] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 19:21:20,037 [Worker-217] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 19:23:47,190 [Worker-217] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 19:23:47,190 [Worker-217] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-22 19:23:47,194 [Worker-217] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 19:23:47,196 [Worker-217] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 19:24:30,613 [Worker-221] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 19:24:30,613 [Worker-221] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-22 19:24:30,613 [Worker-221] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 19:24:30,613 [Worker-221] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 19:24:46,125 [Worker-221] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 19:24:46,125 [Worker-221] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-22 19:24:46,125 [Worker-221] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 19:24:46,125 [Worker-221] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 19:25:41,835 [Worker-222] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 19:25:41,835 [Worker-222] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-22 19:25:41,844 [Worker-222] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 19:25:41,844 [Worker-222] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 19:26:37,939 [Worker-223] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 19:26:37,941 [Worker-223] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-22 19:26:37,941 [Worker-223] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 19:26:37,941 [Worker-223] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 19:27:01,468 [Worker-217] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 19:27:01,468 [Worker-217] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-22 19:27:01,476 [Worker-217] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 19:27:01,476 [Worker-217] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 19:29:27,151 [Worker-217] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 19:29:27,153 [Worker-217] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-22 19:29:27,153 [Worker-217] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 19:29:27,153 [Worker-217] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 19:29:53,871 [Worker-219] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 19:29:53,871 [Worker-219] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-22 19:29:53,877 [Worker-219] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 19:29:53,877 [Worker-219] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 19:31:01,853 [Worker-217] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 19:31:01,853 [Worker-217] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-22 19:31:01,867 [Worker-217] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 19:31:01,867 [Worker-217] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 19:32:46,544 [Worker-222] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 19:32:46,546 [Worker-222] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-22 19:32:46,546 [Worker-222] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 19:32:46,546 [Worker-222] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 19:33:05,018 [Worker-216] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 19:33:05,018 [Worker-216] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-22 19:33:05,018 [Worker-216] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 19:33:05,018 [Worker-216] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 19:33:19,563 [Worker-219] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 19:33:19,563 [Worker-219] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-22 19:33:19,563 [Worker-219] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 19:33:19,563 [Worker-219] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 20:04:29,763 [Worker-225] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:04:29,766 [Worker-225] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-22 20:04:29,766 [Worker-225] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:04:29,766 [Worker-225] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 20:04:55,990 [Worker-219] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:04:55,990 [Worker-219] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-22 20:04:55,990 [Worker-219] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:04:55,990 [Worker-219] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 20:15:35,987 [Worker-227] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:15:35,987 [Worker-227] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-22 20:15:35,994 [Worker-227] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:15:35,995 [Worker-227] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 20:16:48,517 [Worker-232] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:16:48,522 [Worker-232] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-22 20:16:48,522 [Worker-232] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:16:48,522 [Worker-232] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 20:17:27,133 [Worker-232] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:17:27,136 [Worker-232] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-22 20:17:27,136 [Worker-232] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:17:27,136 [Worker-232] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 20:18:56,137 [Worker-225] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:18:56,137 [Worker-225] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-22 20:18:56,137 [Worker-225] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:18:56,137 [Worker-225] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 20:20:18,124 [Worker-230] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/hibernate/hibernate-core/4.3.6.Final/hibernate-core-4.3.6.Final-sources.jar
+2023-07-22 20:20:21,720 [Worker-230] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/hibernate/hibernate-core/4.3.6.Final/hibernate-core-4.3.6.Final-sources.jar
+2023-07-22 20:20:21,864 [Worker-230] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.hibernate:hibernate-core:4.3.6.Final
+2023-07-22 20:20:22,194 [Worker-233] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:20:22,194 [Worker-233] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-07-22 20:20:22,209 [Worker-233] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:20:22,209 [Worker-233] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 20:20:59,281 [Worker-225] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:20:59,281 [Worker-225] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-22 20:20:59,281 [Worker-225] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:20:59,281 [Worker-225] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 20:22:18,184 [Worker-231] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:22:18,186 [Worker-231] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-22 20:22:18,186 [Worker-231] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:22:18,186 [Worker-231] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 20:23:11,836 [Worker-227] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:23:11,836 [Worker-227] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-22 20:23:11,836 [Worker-227] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:23:11,836 [Worker-227] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 20:25:06,114 [Worker-227] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:25:06,116 [Worker-227] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-22 20:25:06,116 [Worker-227] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:25:06,116 [Worker-227] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 20:25:09,725 [Worker-230] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:25:09,725 [Worker-230] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-22 20:25:09,725 [Worker-230] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:25:09,725 [Worker-230] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 20:26:57,935 [Worker-234] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:26:57,935 [Worker-234] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-22 20:26:57,935 [Worker-234] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:26:57,935 [Worker-234] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 20:27:39,522 [Worker-234] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:27:39,522 [Worker-234] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-22 20:27:39,522 [Worker-234] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:27:39,522 [Worker-234] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 20:28:08,629 [Worker-238] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:28:08,629 [Worker-238] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-22 20:28:08,629 [Worker-238] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:28:08,629 [Worker-238] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 20:28:20,375 [Worker-237] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:28:20,375 [Worker-237] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-22 20:28:20,375 [Worker-237] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:28:20,375 [Worker-237] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 20:30:40,084 [Worker-230] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:30:40,086 [Worker-230] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-22 20:30:40,086 [Worker-230] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:30:40,086 [Worker-230] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 20:30:55,692 [Worker-225] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:30:55,692 [Worker-225] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-22 20:30:55,695 [Worker-225] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:30:55,695 [Worker-225] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 20:37:10,118 [Worker-227] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:37:10,118 [Worker-227] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-22 20:37:10,120 [Worker-227] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:37:10,121 [Worker-227] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 20:40:14,997 [Worker-225] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:40:14,997 [Worker-225] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-22 20:40:14,997 [Worker-225] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:40:14,997 [Worker-225] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 20:40:31,523 [Worker-244] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:40:31,523 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-22 20:40:31,523 [Worker-244] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:40:31,523 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 20:41:16,673 [Worker-227] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:41:16,688 [Worker-227] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-22 20:41:16,688 [Worker-227] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:41:16,688 [Worker-227] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 20:41:37,643 [Worker-243] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:41:37,653 [Worker-243] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-22 20:41:37,653 [Worker-243] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:41:37,653 [Worker-243] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 20:43:24,518 [Worker-240] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:43:24,518 [Worker-240] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-22 20:43:24,531 [Worker-240] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:43:24,531 [Worker-240] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 20:43:30,841 [Worker-243] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:43:30,841 [Worker-243] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-22 20:43:30,841 [Worker-243] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:43:30,841 [Worker-243] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 20:43:42,369 [Worker-240] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:43:42,371 [Worker-240] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-22 20:43:42,371 [Worker-240] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:43:42,371 [Worker-240] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 20:45:06,847 [Worker-243] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:45:06,851 [Worker-243] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-22 20:45:06,851 [Worker-243] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 20:45:06,851 [Worker-243] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 21:38:47,587 [Worker-247] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 21:38:47,587 [Worker-247] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-22 21:38:47,587 [Worker-247] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 21:38:47,587 [Worker-247] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 21:47:28,024 [Worker-247] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 21:47:28,024 [Worker-247] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-22 21:47:28,024 [Worker-247] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 21:47:28,024 [Worker-247] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-22 21:48:09,379 [Worker-247] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 21:48:09,379 [Worker-247] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-22 21:48:09,379 [Worker-247] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-22 21:48:09,393 [Worker-247] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-23 00:58:27,370 [Worker-296] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-23 00:58:27,370 [Worker-296] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-23 00:58:27,385 [Worker-296] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-23 00:58:27,385 [Worker-296] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-23 00:59:47,919 [Worker-298] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-23 00:59:47,919 [Worker-298] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-23 00:59:47,919 [Worker-298] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-23 00:59:47,919 [Worker-298] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-23 01:00:51,711 [Worker-298] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-23 01:00:51,711 [Worker-298] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-23 01:00:51,711 [Worker-298] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-23 01:00:51,711 [Worker-298] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-23 01:01:37,905 [Worker-298] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-23 01:01:37,907 [Worker-298] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-23 01:01:37,908 [Worker-298] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-23 01:01:37,908 [Worker-298] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-23 01:03:20,354 [Worker-296] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-23 01:03:20,354 [Worker-296] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-23 01:03:20,354 [Worker-296] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-23 01:03:20,354 [Worker-296] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-23 01:03:52,994 [Worker-264] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-23 01:03:52,994 [Worker-264] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-23 01:03:52,994 [Worker-264] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-23 01:03:52,994 [Worker-264] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-23 01:04:05,434 [Worker-302] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-23 01:04:05,434 [Worker-302] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-23 01:04:05,481 [Worker-302] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-23 01:04:05,481 [Worker-302] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-23 01:04:07,670 [Worker-300] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-23 01:04:07,670 [Worker-300] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-23 01:04:07,670 [Worker-300] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-23 01:04:07,670 [Worker-300] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-23 12:58:51,953 [Worker-309] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-23 12:58:51,969 [Worker-309] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-23 12:58:51,969 [Worker-309] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-23 12:58:51,969 [Worker-309] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-23 12:59:33,300 [Worker-299] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-23 12:59:33,300 [Worker-299] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-23 12:59:33,300 [Worker-299] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-23 12:59:33,300 [Worker-299] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-23 13:05:36,837 [Worker-299] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-23 13:05:36,837 [Worker-299] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-23 13:05:36,837 [Worker-299] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-23 13:05:36,837 [Worker-299] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-23 13:06:07,729 [Worker-315] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-23 13:06:07,730 [Worker-315] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-23 13:06:07,732 [Worker-315] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-23 13:06:07,733 [Worker-315] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-23 17:32:03,798 [Worker-365] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-23 17:32:03,798 [Worker-365] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-23 17:32:03,798 [Worker-365] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-23 17:32:03,798 [Worker-365] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-24 13:14:30,282 [Worker-444] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-24 13:14:30,284 [Worker-444] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-24 13:14:30,284 [Worker-444] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-24 13:14:30,284 [Worker-444] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-24 13:18:25,638 [Worker-445] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-24 13:18:25,638 [Worker-445] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-24 13:18:25,640 [Worker-445] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-24 13:18:25,640 [Worker-445] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-24 13:18:44,568 [Worker-444] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-24 13:18:44,568 [Worker-444] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-24 13:18:44,568 [Worker-444] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-24 13:18:44,568 [Worker-444] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-24 13:19:09,422 [Worker-444] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-24 13:19:09,422 [Worker-444] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-24 13:19:09,422 [Worker-444] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-24 13:19:09,422 [Worker-444] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-24 13:19:38,180 [Worker-446] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-24 13:19:38,181 [Worker-446] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-24 13:19:38,182 [Worker-446] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-24 13:19:38,182 [Worker-446] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-24 13:20:11,443 [Worker-442] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-24 13:20:11,443 [Worker-442] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-24 13:20:11,456 [Worker-442] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-24 13:20:11,456 [Worker-442] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-24 13:22:32,134 [Worker-444] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-24 13:22:32,134 [Worker-444] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-24 13:22:32,148 [Worker-444] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-24 13:22:32,148 [Worker-444] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-30 21:22:23,398 [Worker-799] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 21:22:23,403 [Worker-799] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-30 21:22:23,403 [Worker-799] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 21:22:23,403 [Worker-799] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-30 21:22:52,289 [Worker-801] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 21:22:52,289 [Worker-801] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-30 21:22:52,289 [Worker-801] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 21:22:52,289 [Worker-801] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-30 21:25:35,770 [Worker-798] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 21:25:35,770 [Worker-798] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-30 21:25:35,770 [Worker-798] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 21:25:35,770 [Worker-798] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-30 21:26:08,475 [Worker-787] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 21:26:08,475 [Worker-787] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-30 21:26:08,475 [Worker-787] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 21:26:08,482 [Worker-787] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-30 21:28:54,980 [Worker-798] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 21:28:54,982 [Worker-798] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-30 21:28:54,984 [Worker-798] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 21:28:54,984 [Worker-798] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-30 21:29:08,819 [Worker-801] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 21:29:08,819 [Worker-801] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-30 21:29:08,819 [Worker-801] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 21:29:08,819 [Worker-801] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-30 21:29:22,189 [Worker-799] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 21:29:22,189 [Worker-799] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-30 21:29:22,189 [Worker-799] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 21:29:22,189 [Worker-799] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-30 21:31:07,249 [Worker-800] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 21:31:07,283 [Worker-800] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-30 21:31:07,283 [Worker-800] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 21:31:07,283 [Worker-800] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-30 21:31:18,060 [Worker-802] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 21:31:18,060 [Worker-802] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-30 21:31:18,060 [Worker-802] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 21:31:18,060 [Worker-802] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-30 21:31:28,751 [Worker-796] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 21:31:28,751 [Worker-796] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-30 21:31:28,751 [Worker-796] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 21:31:28,751 [Worker-796] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-30 21:33:29,899 [Worker-798] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 21:33:29,913 [Worker-798] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-30 21:33:29,915 [Worker-798] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 21:33:29,915 [Worker-798] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-30 21:37:55,403 [Worker-799] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 21:37:55,403 [Worker-799] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-30 21:37:55,403 [Worker-799] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 21:37:55,403 [Worker-799] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-30 21:51:04,449 [Worker-787] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 21:51:04,449 [Worker-787] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-30 21:51:04,449 [Worker-787] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 21:51:04,449 [Worker-787] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-30 22:01:24,997 [Worker-808] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 22:01:24,997 [Worker-808] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-30 22:01:24,997 [Worker-808] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 22:01:24,997 [Worker-808] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-30 22:13:30,601 [Worker-817] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 22:13:30,601 [Worker-817] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-30 22:13:30,601 [Worker-817] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 22:13:30,601 [Worker-817] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-30 22:25:33,388 [Worker-817] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 22:25:33,388 [Worker-817] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-30 22:25:33,393 [Worker-817] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 22:25:33,393 [Worker-817] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-30 22:26:01,220 [Worker-819] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 22:26:01,220 [Worker-819] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-30 22:26:01,220 [Worker-819] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 22:26:01,220 [Worker-819] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-30 22:34:14,713 [Worker-819] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 22:34:14,721 [Worker-819] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-30 22:34:14,721 [Worker-819] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 22:34:14,721 [Worker-819] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-30 22:35:49,983 [Worker-824] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 22:35:49,999 [Worker-824] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-30 22:35:50,001 [Worker-824] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 22:35:50,001 [Worker-824] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-30 22:37:24,575 [Worker-816] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 22:37:24,575 [Worker-816] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-30 22:37:24,575 [Worker-816] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 22:37:24,575 [Worker-816] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-30 22:37:29,307 [Worker-816] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 22:37:29,307 [Worker-816] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-30 22:37:29,307 [Worker-816] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 22:37:29,307 [Worker-816] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-30 22:38:10,256 [Worker-819] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 22:38:10,257 [Worker-819] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-30 22:38:10,258 [Worker-819] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 22:38:10,259 [Worker-819] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-30 22:38:43,174 [Worker-816] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 22:38:43,174 [Worker-816] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-30 22:38:43,174 [Worker-816] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 22:38:43,174 [Worker-816] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-30 22:40:28,112 [Worker-824] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 22:40:28,112 [Worker-824] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-30 22:40:28,114 [Worker-824] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 22:40:28,114 [Worker-824] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-30 22:41:08,840 [Worker-821] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 22:41:08,840 [Worker-821] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-30 22:41:08,840 [Worker-821] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 22:41:08,840 [Worker-821] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-30 22:41:31,503 [Worker-824] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 22:41:31,510 [Worker-824] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-30 22:41:31,510 [Worker-824] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 22:41:31,510 [Worker-824] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-30 22:41:57,121 [Worker-821] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 22:41:57,123 [Worker-821] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-30 22:41:57,123 [Worker-821] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 22:41:57,123 [Worker-821] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-30 22:41:59,216 [Worker-823] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 22:41:59,216 [Worker-823] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-30 22:41:59,216 [Worker-823] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 22:41:59,216 [Worker-823] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-30 22:42:04,648 [Worker-823] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 22:42:04,648 [Worker-823] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-30 22:42:04,648 [Worker-823] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 22:42:04,648 [Worker-823] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-30 22:46:29,765 [Worker-828] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 22:46:29,765 [Worker-828] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-30 22:46:29,765 [Worker-828] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 22:46:29,765 [Worker-828] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-30 22:46:42,756 [Worker-816] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 22:46:42,756 [Worker-816] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-30 22:46:42,756 [Worker-816] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 22:46:42,756 [Worker-816] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-30 22:46:51,948 [Worker-828] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 22:46:51,948 [Worker-828] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-30 22:46:51,955 [Worker-828] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 22:46:51,955 [Worker-828] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-30 22:50:38,428 [Worker-833] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 22:50:38,428 [Worker-833] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-30 22:50:38,428 [Worker-833] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 22:50:38,428 [Worker-833] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-30 22:50:56,768 [Worker-833] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 22:50:56,768 [Worker-833] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-30 22:50:56,768 [Worker-833] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 22:50:56,768 [Worker-833] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-30 22:53:46,151 [Worker-833] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 22:53:46,151 [Worker-833] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-30 22:53:46,151 [Worker-833] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 22:53:46,151 [Worker-833] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-30 22:53:50,456 [Worker-825] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 22:53:50,456 [Worker-825] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-30 22:53:50,456 [Worker-825] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 22:53:50,456 [Worker-825] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-30 22:55:13,412 [Worker-833] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 22:55:13,412 [Worker-833] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-30 22:55:13,412 [Worker-833] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 22:55:13,412 [Worker-833] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-30 22:57:01,310 [Worker-832] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 22:57:01,310 [Worker-832] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-30 22:57:01,310 [Worker-832] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 22:57:01,310 [Worker-832] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-30 23:11:39,941 [Worker-838] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 23:11:39,941 [Worker-838] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-30 23:11:39,942 [Worker-838] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 23:11:39,943 [Worker-838] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-30 23:11:58,089 [Worker-837] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 23:11:58,089 [Worker-837] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-30 23:11:58,089 [Worker-837] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 23:11:58,089 [Worker-837] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-30 23:13:06,653 [Worker-838] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 23:13:06,653 [Worker-838] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-30 23:13:06,655 [Worker-838] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-30 23:13:06,655 [Worker-838] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-31 12:38:22,111 [Worker-884] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-31 12:38:22,123 [Worker-884] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-31 12:38:22,124 [Worker-884] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-31 12:38:22,125 [Worker-884] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-31 13:17:22,588 [Worker-893] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-31 13:17:22,588 [Worker-893] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-31 13:17:22,604 [Worker-893] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-31 13:17:22,604 [Worker-893] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources
+2023-07-31 13:17:43,387 [Worker-886] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-31 13:17:43,387 [Worker-886] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-07-31 13:17:43,394 [Worker-886] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-07-31 13:17:43,396 [Worker-886] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\projects\SpringAccurate\erp\src\test\resources

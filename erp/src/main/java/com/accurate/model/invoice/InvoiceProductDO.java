@@ -64,6 +64,10 @@ public class InvoiceProductDO {
 	
 	@Column(name = "User_Id")
 	Integer userId;
+	
+	
+	
+	
 
 	public Integer getInvoiceProductId() {
 		return invoiceProductId;

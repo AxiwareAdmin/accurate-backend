@@ -1,7 +1,7 @@
 package com.accurate.model.invoice;
 
 import java.math.BigDecimal;
-import java.sql.Date;
+import java.util.Date;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -42,7 +42,7 @@ public class InvoiceDO {
 	String customerName;
 
 	@Column(name = "Billing_Address")
-	String BillingAddress;
+	String billingAddress;
 
 	@Column(name = "City")
 	String city;
@@ -69,7 +69,7 @@ public class InvoiceDO {
 	String shippingGstNo;
 
 	@Column(name = "PO_No")
-	String poNo;
+	String poNumber;
 
 	@Column(name = "PO_Date")
 	Date poDate;
@@ -108,7 +108,7 @@ public class InvoiceDO {
 	String additionalCharges;
 
 	@Column(name = "Invoice_Status")
-	String status;
+	String invoiceStatus;
 
 	@Column(name = "Invoice_Value")
 	BigDecimal invoiceValue;
@@ -117,85 +117,57 @@ public class InvoiceDO {
 	BigDecimal taxableValue;
 	
 	@Column(name = "CGST_Value")
-	Integer CGSTValue;
+	BigDecimal cgstValue;
 	
 	@Column(name = "SGST_Value")
-	Integer SGSTValue;
+	BigDecimal sgstValue;
 	
 	@Column(name = "IGST_Value")
-	Integer IGSTValue;
-	
-
-	public Integer getCGSTValue() {
-		return CGSTValue;
-	}
-
-	public void setCGSTValue(Integer cGSTValue) {
-		CGSTValue = cGSTValue;
-	}
-
-	public Integer getSGSTValue() {
-		return SGSTValue;
-	}
-
-	public void setSGSTValue(Integer sGSTValue) {
-		SGSTValue = sGSTValue;
-	}
-
-	public Integer getIGSTValue() {
-		return IGSTValue;
-	}
-
-	public void setIGSTValue(Integer iGSTValue) {
-		IGSTValue = iGSTValue;
-	}
-
-	public BigDecimal getTaxableValue() {
-		return taxableValue;
-	}
-
-	public void setTaxableValue(BigDecimal taxableValue) {
-		this.taxableValue = taxableValue;
-	}
-
-	// Transfer values start
-/*	Integer totalInvoiceCount;
-
-	BigDecimal totalInvoiceValue;
-
-	Integer totalPaidInvoiceCount;
-
-	BigDecimal totalPaidInvoiceValue;
-
-	Integer totalUnpaidInvoiceCount;
-
-	BigDecimal totalUnpaidInvoiceValue;
-
-	Integer totalCancelledInvoiceCount;
-
-	BigDecimal totalCancelledInvoiceValue;
-	
-	List<InvoiceDO> pageResults=new ArrayList<InvoiceDO>();
-	List<CustomerDO> customerList = new ArrayList<CustomerDO>();
-
-	List<InvoiceProductDO> invoiceProductDOs=new ArrayList<InvoiceProductDO>();*/
-
-	/*CustomerDO customerDO;
+	BigDecimal igstValue;
 	
 	
-	public CustomerDO getCustomerDO() {
-		return customerDO;
-	}*/
+	@Column(name="Discount")
+	BigDecimal discount;
+	
+	@Column(name="Other_Discount")
+	BigDecimal otherDiscount;
+	
+	@Column(name="Invoice_Product_ID")
+	Integer invoiceProductId;
 
-
-
-	//Transfer values end
-	public BigDecimal getInvoiceValue() {
-		return invoiceValue;
+	@Column(name="Month")
+	String month;
+	
+	
+	@Column(name="Created_Date")
+	Date createdDate;
+	
+	
+	
+	
+	
+	public Date getCreatedDate() {
+		return createdDate;
 	}
 
-	public void setInvoiceValue(BigDecimal invoiceValue) {
-		this.invoiceValue = invoiceValue;
+	public void setCreatedDate(Date createdDate) {
+		this.createdDate = createdDate;
+	}
+
+	public String getMonth() {
+		return month;
+	}
+
+	public void setMonth(String month) {
+		this.month = month;
+	}
+
+	public Integer getInvoiceProductId() {
+		return invoiceProductId;
+	}
+
+	public void setInvoiceProductId(Integer invoiceProductId) {
+		this.invoiceProductId = invoiceProductId;
 	}
 
 	public Integer getInvoiceId() {
@@ -231,11 +203,11 @@ public class InvoiceDO {
 	}
 
 	public String getBillingAddress() {
-		return BillingAddress;
+		return billingAddress;
 	}
 
 	public void setBillingAddress(String billingAddress) {
-		BillingAddress = billingAddress;
+		this.billingAddress = billingAddress;
 	}
 
 	public String getCity() {
@@ -302,12 +274,12 @@ public class InvoiceDO {
 		this.shippingGstNo = shippingGstNo;
 	}
 
-	public String getPoNo() {
-		return poNo;
+	public String getPoNumber() {
+		return poNumber;
 	}
 
-	public void setPoNo(String poNo) {
-		this.poNo = poNo;
+	public void setPoNumber(String poNumber) {
+		this.poNumber = poNumber;
 	}
 
 	public Date getPoDate() {
@@ -406,12 +378,70 @@ public class InvoiceDO {
 		this.additionalCharges = additionalCharges;
 	}
 
-	public String getStatus() {
-		return status;
+	public String getInvoiceStatus() {
+		return invoiceStatus;
 	}
 
-	public void setStatus(String status) {
-		this.status = status;
+	public void setInvoiceStatus(String invoiceStatus) {
+		this.invoiceStatus = invoiceStatus;
 	}
 
+	public BigDecimal getInvoiceValue() {
+		return invoiceValue;
+	}
+
+	public void setInvoiceValue(BigDecimal invoiceValue) {
+		this.invoiceValue = invoiceValue;
+	}
+
+	public BigDecimal getTaxableValue() {
+		return taxableValue;
+	}
+
+	public void setTaxableValue(BigDecimal taxableValue) {
+		this.taxableValue = taxableValue;
+	}
+
+	public BigDecimal getCgstValue() {
+		return cgstValue;
+	}
+
+	public void setCgstValue(BigDecimal cgstValue) {
+		this.cgstValue = cgstValue;
+	}
+
+	public BigDecimal getSgstValue() {
+		return sgstValue;
+	}
+
+	public void setSgstValue(BigDecimal sgstValue) {
+		this.sgstValue = sgstValue;
+	}
+
+	public BigDecimal getIgstValue() {
+		return igstValue;
+	}
+
+	public void setIgstValue(BigDecimal igstValue) {
+		this.igstValue = igstValue;
+	}
+
+	public BigDecimal getDiscount() {
+		return discount;
+	}
+
+	public void setDiscount(BigDecimal discount) {
+		this.discount = discount;
+	}
+
+	public BigDecimal getOtherDiscount() {
+		return otherDiscount;
+	}
+
+	public void setOtherDiscount(BigDecimal otherDiscount) {
+		this.otherDiscount = otherDiscount;
+	}
+	
+	
+	
 }

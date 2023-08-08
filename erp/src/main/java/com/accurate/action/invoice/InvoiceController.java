@@ -1,7 +1,10 @@
 package com.accurate.action.invoice;
 
+import java.awt.PageAttributes.MediaType;
+import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.log4j.Logger;
 import org.json.JSONObject;
@@ -12,6 +15,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.accurate.model.invoice.CustomerDO;
@@ -96,4 +101,23 @@ public class InvoiceController {
 		}
 	}
 
+	@PostMapping(value="/saveInvoice",consumes= {"application/json"})
+	@CrossOrigin(origins={"*"})
+	public ResponseEntity<?> saveInvoice(@RequestBody Map<String, Object> inputJson) throws ParseException{
+		
+		System.out.print(inputJson);
+		
+		String msg=invoiceService.saveInvoice(inputJson);
+		
+		JSONObject jsonObj=new JSONObject();
+		if(msg.equals("success")) {
+		jsonObj.put("res", "success");
+		}else {
+			jsonObj.put("res", "failure");
+		}
+		return new ResponseEntity<String>(jsonObj.toString(),HttpStatus.OK);
+
+		
+		
+	}
 }

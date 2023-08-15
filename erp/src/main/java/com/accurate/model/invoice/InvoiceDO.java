@@ -142,10 +142,19 @@ public class InvoiceDO {
 	@Column(name="Created_Date")
 	Date createdDate;
 	
+	/*@OneToMany(fetch = FetchType.LAZY, mappedBy="invoiceId")
+	@Cascade({CascadeType.ALL})
+	private Set<InvoiceProductDO> productdo = new HashSet<>();
 	
-	
-	
-	
+	public Set<InvoiceProductDO> getProductdo() {
+		return productdo;
+	}
+
+	public void setProductdo(Set<InvoiceProductDO> productdo) {
+		this.productdo = productdo;
+		
+	}
+*/
 	public Date getCreatedDate() {
 		return createdDate;
 	}

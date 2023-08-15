@@ -144,6 +144,24 @@ public class InvoiceDao {
 		return "success";
 	}
 	
+	public InvoiceDO getInvoiceDetails(String invNo){
+		LOGGER.info("InvoiceDao :: getInvoiceDetails :: Start ");
+		InvoiceDO invDO=null;
+		try {
+			
+			Session session=getSession();
+			Criteria criteria=session.createCriteria(InvoiceDO.class);
+			criteria.add(Restrictions.eq("invoiceNo",invNo));
+			invDO=(InvoiceDO)criteria.uniqueResult();
+			
+			
+		}catch(Exception e) {
+			LOGGER.error("Exception occured in InvoiceDao :: getInvoiceDetails ");
+		}
+		LOGGER.info("InvoiceDao :: getInvoiceDetails method end");
+		return invDO;
+	}
+	
 	
 	
 	

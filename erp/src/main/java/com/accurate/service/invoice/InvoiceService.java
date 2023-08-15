@@ -192,4 +192,10 @@ public class InvoiceService {
 		
 	}
 	
+	
+	public InvoiceDO getInvoiceDetails(String invNo){
+		LOGGER.info("InvoiceService::getInvoiceDetails()::start");
+		return invoiceDao.getInvoiceDetails(invNo);
+	}
+	
 }

@@ -6,6 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+import javax.ws.rs.QueryParam;
+
 import org.apache.log4j.Logger;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +19,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.accurate.model.invoice.CustomerDO;
@@ -119,5 +122,19 @@ public class InvoiceController {
 
 		
 		
+	}
+	
+	@GetMapping(value="/viewInvoice")
+	@CrossOrigin(origins={"*"})
+	public ResponseEntity<?> getInvoiceDetails(@QueryParam("invNo") String invNo){
+		InvoiceDO invoicedo=invoiceService.getInvoiceDetails(invNo);
+		if(invoicedo!=null) {
+		return new ResponseEntity<InvoiceDO>(invoicedo,HttpStatus.OK);
+		}
+		else {
+			JSONObject jsonObj=new JSONObject();
+			jsonObj.put("res", "Invoice Details are not found");
+			return new ResponseEntity<String>(jsonObj.toString(),HttpStatus.OK);
+		}
 	}
 }

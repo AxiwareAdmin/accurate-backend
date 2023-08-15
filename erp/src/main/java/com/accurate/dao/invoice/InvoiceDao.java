@@ -144,6 +144,8 @@ public class InvoiceDao {
 		return "success";
 	}
 	
+	@SuppressWarnings("deprecation")
+	@Transactional
 	public InvoiceDO getInvoiceDetails(String invNo){
 		LOGGER.info("InvoiceDao :: getInvoiceDetails :: Start ");
 		InvoiceDO invDO=null;

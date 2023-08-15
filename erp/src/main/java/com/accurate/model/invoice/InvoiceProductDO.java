@@ -6,6 +6,7 @@ import java.util.Date;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -27,11 +28,11 @@ public class InvoiceProductDO {
 	@Column(name = "Product_Description")
 	String productDescription;
 
-	/*@Column(name="Prodcut_Type")
-	String productType;*/
+	@Column(name="Quantity")
+	Integer quantity;
 	
-	/*@Column(name="part_code")
-	String partCode;*/
+	@Column(name="Discount")
+	Integer discount;
 	
 	@Column(name = "HSN_SAC")
 	String hsnCode;
@@ -42,8 +43,8 @@ public class InvoiceProductDO {
 	@Column(name = "Rate")
 	BigDecimal rate;
 
-	/*@Column(name = "category")
-	String category;*/
+	@Column(name = "Amount")
+	Integer amount;
 
 	@Column(name = "Tax")
 	BigDecimal applicableTax;
@@ -69,13 +70,13 @@ public class InvoiceProductDO {
 	Integer userId;
 	
 	
-	@ManyToOne(cascade = CascadeType.ALL)
-	@JoinColumn(name = "Invoice_id")
+	@ManyToOne
+	@JoinColumn(name = "Invoice_id" , nullable=false)
 	private InvoiceDO invoiceId;
 
-	public InvoiceDO getInvoiceId() {
+	/*public InvoiceDO getInvoiceId() {
 		return invoiceId;
-	}
+	}*/
 
 	public void setInvoiceId(InvoiceDO invoiceId) {
 		this.invoiceId = invoiceId;
@@ -105,21 +106,7 @@ public class InvoiceProductDO {
 		this.productDescription = productDescription;
 	}
 
-	/*public String getProductType() {
-		return productType;
-	}
-
-	public void setProductType(String productType) {
-		this.productType = productType;
-	}
-
-	public String getPartCode() {
-		return partCode;
-	}
-
-	public void setPartCode(String partCode) {
-		this.partCode = partCode;
-	}*/
+	
 
 	public String getHsnCode() {
 		return hsnCode;
@@ -146,13 +133,7 @@ public class InvoiceProductDO {
 		this.rate = rate;
 	}
 
-	/*public String getCategory() {
-		return category;
-	}
-
-	public void setCategory(String category) {
-		this.category = category;
-	}*/
+	
 
 	public BigDecimal getApplicableTax() {
 		return applicableTax;
@@ -162,13 +143,7 @@ public class InvoiceProductDO {
 		this.applicableTax = applicableTax;
 	}
 
-	/*public Integer getOpeningStock() {
-		return openingStock;
-	}
-
-	public void setOpeningStock(Integer openingStock) {
-		this.openingStock = openingStock;
-	}*/
+	
 	public String getCreatedBy() {
 		return createdBy;
 	}
@@ -194,13 +169,7 @@ public class InvoiceProductDO {
 		this.userId = userId;
 	}
 
-	/*public Date getAsOnDate() {
-		return asOnDate;
-	}
-
-	public void setAsOnDate(Date asOnDate) {
-		this.asOnDate = asOnDate;
-	}*/
+	
 
 	public Date getCreatedDate() {
 		return createdDate;
@@ -210,6 +179,29 @@ public class InvoiceProductDO {
 		this.createdDate = createdDate;
 	}
 
+	public Integer getQuantity() {
+		return quantity;
+	}
+
+	public void setQuantity(Integer quantity) {
+		this.quantity = quantity;
+	}
+
+	public Integer getDiscount() {
+		return discount;
+	}
+
+	public void setDiscount(Integer discount) {
+		this.discount = discount;
+	}
+
+	public Integer getAmount() {
+		return amount;
+	}
+
+	public void setAmount(Integer amount) {
+		this.amount = amount;
+	}
 
 	
 }

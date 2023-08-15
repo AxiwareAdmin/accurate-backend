@@ -7,7 +7,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -17,9 +17,6 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
-
-import org.hibernate.annotations.Cascade;
-import org.hibernate.annotations.CascadeType;
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
 
@@ -142,19 +139,20 @@ public class InvoiceDO {
 	@Column(name="Created_Date")
 	Date createdDate;
 	
-	/*@OneToMany(fetch = FetchType.LAZY, mappedBy="invoiceId")
-	@Cascade({CascadeType.ALL})
-	private Set<InvoiceProductDO> productdo = new HashSet<>();
+	@OneToMany(mappedBy="invoiceId" , fetch = FetchType.LAZY , cascade = CascadeType.ALL)
+	private Set<InvoiceProductDO> productdo = new HashSet<InvoiceProductDO>();
 	
 	public Set<InvoiceProductDO> getProductdo() {
 		return productdo;
 	}
 
 	public void setProductdo(Set<InvoiceProductDO> productdo) {
-		this.productdo = productdo;
+		//this.productdo = productdo;
+		this.productdo.clear();
+		this.productdo.addAll(productdo);
 		
 	}
-*/
+
 	public Date getCreatedDate() {
 		return createdDate;
 	}

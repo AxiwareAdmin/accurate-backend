@@ -6,6 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+import javax.ws.rs.QueryParam;
+
 import org.apache.log4j.Logger;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,8 +23,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.accurate.model.invoice.CustomerDO;
 import com.accurate.model.invoice.InvoiceDO;
-import com.accurate.model.invoice.InvoiceProductDO;
+import com.accurate.model.invoice.ProductDO;
 import com.accurate.service.invoice.InvoiceService;
+import com.accurate.model.invoice.InvoiceProductDO;
 
 @RestController
 public class InvoiceController {
@@ -76,9 +79,9 @@ public class InvoiceController {
 	@GetMapping(value="/invoiceproducts")
 	@CrossOrigin(origins={"*"})
 	public ResponseEntity<?> getInvoiceProducts(){
-		List<InvoiceProductDO> invoiceProductList=invoiceService.getInvoiceProductList();
+		List<ProductDO> invoiceProductList=invoiceService.getInvoiceProductList();
 		if(invoiceProductList!=null && invoiceProductList.size()>0) {
-		return new ResponseEntity<List<InvoiceProductDO>>(invoiceProductList,HttpStatus.OK);
+		return new ResponseEntity<List<ProductDO>>(invoiceProductList,HttpStatus.OK);
 		}
 		else {
 			JSONObject jsonObj=new JSONObject();
@@ -90,9 +93,9 @@ public class InvoiceController {
 	@GetMapping(value="/invoiceproduct/{id}")
 	@CrossOrigin(origins={"*"})
 	public ResponseEntity<?> getInvoiceProducts(@PathVariable Integer id){
-		InvoiceProductDO prodDO=invoiceService.getProductById(id);
+		ProductDO prodDO=invoiceService.getProductById(id);
 		if(prodDO!=null) {
-		return new ResponseEntity<InvoiceProductDO>(prodDO,HttpStatus.OK);
+		return new ResponseEntity<ProductDO>(prodDO,HttpStatus.OK);
 		}
 		else {
 			JSONObject jsonObj=new JSONObject();
@@ -119,5 +122,19 @@ public class InvoiceController {
 
 		
 		
+	}
+	
+	@GetMapping(value="/viewInvoice")
+	@CrossOrigin(origins={"*"})
+	public ResponseEntity<?> getInvoiceDetails(@QueryParam("invNo") String invNo){
+		InvoiceDO invoicedo=invoiceService.getInvoiceDetails(invNo);
+		if(invoicedo!=null) {
+		return new ResponseEntity<InvoiceDO>(invoicedo,HttpStatus.OK);
+		}
+		else {
+			JSONObject jsonObj=new JSONObject();
+			jsonObj.put("res", "Invoice Details are not found");
+			return new ResponseEntity<String>(jsonObj.toString(),HttpStatus.OK);
+		}
 	}
 }

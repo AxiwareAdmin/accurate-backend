@@ -20,6 +20,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.accurate.action.invoice.InvoiceController;
 import com.accurate.model.invoice.CustomerDO;
 import com.accurate.model.invoice.InvoiceDO;
+import com.accurate.model.invoice.ProductDO;
 import com.accurate.model.invoice.InvoiceProductDO;
 @Repository
 public class InvoiceDao {
@@ -66,15 +67,15 @@ public class InvoiceDao {
 		return customerDO;
 	}
 	
-	public InvoiceProductDO getProductById(Integer prodId){
+	public ProductDO getProductById(Integer prodId){
 		LOGGER.info("InvoiceDao :: getProductById :: Start ");
-		InvoiceProductDO productDO=null;
+		ProductDO productDO=null;
 		try {
 			
 			Session session=getSession();
-			Criteria criteria=session.createCriteria(InvoiceProductDO.class);
+			Criteria criteria=session.createCriteria(ProductDO.class);
 			criteria.add(Restrictions.eq("invoiceProductId",prodId));
-			productDO=(InvoiceProductDO)criteria.uniqueResult();
+			productDO=(ProductDO)criteria.uniqueResult();
 			
 			
 		}catch(Exception e) {
@@ -103,13 +104,13 @@ public class InvoiceDao {
 		return invoiceList;
 	}
 	
-	public List<InvoiceProductDO> getInvoiceProductList(){
+	public List<ProductDO> getInvoiceProductList(){
 		LOGGER.info("InvoiceDao :: getInvoiceProductList :: Start ");
-		List<InvoiceProductDO> invoiceProductList = new ArrayList<InvoiceProductDO>();
+		List<ProductDO> invoiceProductList = new ArrayList<ProductDO>();
 		try {
 			
 			Session session=getSession();
-			Criteria criteria=session.createCriteria(InvoiceProductDO.class);
+			Criteria criteria=session.createCriteria(ProductDO.class);
 			invoiceProductList=criteria.list();
 			
 			
@@ -119,6 +120,33 @@ public class InvoiceDao {
 		LOGGER.info("InvoiceDao :: getInvoiceProductList method end");
 		return invoiceProductList;
 	}
+	
+	
+	public static void main(String[] args) {
+		try {
+			
+			ProductDO productDO=null;
+			
+			InvoiceDao invoiceDao=new InvoiceDao();
+				
+				Session session=invoiceDao.getSession();
+				Transaction tx=session.getTransaction();
+				tx.begin();
+				Criteria criteria=session.createCriteria(ProductDO.class);
+				criteria.add(Restrictions.eq("invoiceProductId",1));
+				productDO=(ProductDO)criteria.uniqueResult();
+				
+				productDO.setProductDescription("nadimkhan");
+				tx.commit();
+				session.flush();
+				session.close();
+				
+			
+		}catch(Exception e) {
+			System.out.println("Exception:"+e);
+		}
+	}
+	
 	
 	public String saveInvoice(InvoiceDO invoiceDO) {
 		LOGGER.info("InvoiceDao::saveInvoice::start");
@@ -142,6 +170,26 @@ public class InvoiceDao {
 		
 		LOGGER.info("InvoiceDao::saveInvoice::end");
 		return "success";
+	}
+	
+	@SuppressWarnings("deprecation")
+	@Transactional
+	public InvoiceDO getInvoiceDetails(String invNo){
+		LOGGER.info("InvoiceDao :: getInvoiceDetails :: Start ");
+		InvoiceDO invDO=null;
+		try {
+			
+			Session session=getSession();
+			Criteria criteria=session.createCriteria(InvoiceDO.class);
+			criteria.add(Restrictions.eq("invoiceNo",invNo));
+			invDO=(InvoiceDO)criteria.uniqueResult();
+			
+			
+		}catch(Exception e) {
+			LOGGER.error("Exception occured in InvoiceDao :: getInvoiceDetails ");
+		}
+		LOGGER.info("InvoiceDao :: getInvoiceDetails method end");
+		return invDO;
 	}
 	
 	

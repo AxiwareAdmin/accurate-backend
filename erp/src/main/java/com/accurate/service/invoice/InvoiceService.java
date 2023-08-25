@@ -4,6 +4,7 @@ import java.math.BigDecimal;
 import java.sql.Date;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -16,6 +17,7 @@ import com.accurate.dao.invoice.InvoiceDao;
 import com.accurate.model.invoice.CustomerDO;
 import com.accurate.model.invoice.InvoiceDO;
 import com.accurate.model.invoice.InvoiceProductDO;
+import com.accurate.model.invoice.ProductDO;
 
 @Service
 public class InvoiceService {
@@ -34,7 +36,7 @@ public class InvoiceService {
 		return invoiceDao.getInvoiceList();
 	}
 	
-	public List<InvoiceProductDO> getInvoiceProductList(){
+	public List<ProductDO> getInvoiceProductList(){
 		LOGGER.info("InvoiceService::getInvoiceProductList()::start");
 		return invoiceDao.getInvoiceProductList();
 		
@@ -45,7 +47,7 @@ public class InvoiceService {
 		return invoiceDao.getCustomerById(custId);
 	}
 	
-	public InvoiceProductDO getProductById(Integer prodId){
+	public ProductDO getProductById(Integer prodId){
 		LOGGER.info("InvoiceService::getProductById()::start");
 		return invoiceDao.getProductById(prodId);
 	}
@@ -98,6 +100,43 @@ public class InvoiceService {
 		Object transportMode=inputJson.get("transportMode");
 		
 		Object vehicleNumber=inputJson.get("vehicleNumber");
+		
+		List<Map<String,Object>> invoiceProd=(List<Map<String,Object>>)inputJson.get("invoiceProducts");
+		
+		List<InvoiceProductDO> invoiceProducts=new ArrayList<>();
+		if(invoiceProd!=null && invoiceProd.size()>0) {
+			for(Map<String,Object> tempProd:invoiceProd) {
+				InvoiceProductDO invoiceProduct=new InvoiceProductDO();
+				
+				invoiceProduct.setProductName(tempProd.get("productName").toString());
+				
+				invoiceProduct.setProductDescription(tempProd.get("description").toString());
+				
+				invoiceProduct.setHsnSac(tempProd.get("hsnSac").toString());
+				
+				invoiceProduct.setTax(tempProd.get("tax").toString());
+				
+				invoiceProduct.setQuantity(tempProd.get("quantity").toString());
+				
+				invoiceProduct.setUnit(tempProd.get("unit").toString());
+				
+				invoiceProduct.setRate(tempProd.get("price").toString());
+				
+				invoiceProduct.setAmount(tempProd.get("amount").toString());
+				
+				invoiceProduct.setDiscount(tempProd.get("discount").toString());
+				
+				
+				invoiceProduct.setInvoiceNumber(invoiceNo.toString());
+				
+				invoiceProduct.setInvoiceDate(sdf.parse(invoiceDate.toString()));
+				
+				invoiceProduct.setInvoiceDO(invoiceDO);
+				
+				invoiceProducts.add(invoiceProduct);
+			}
+			invoiceDO.setInvoiceProductDO(invoiceProducts);
+		}
 		
 		if(invoiceNo!=null)
 		invoiceDO.setInvoiceNo(invoiceNo.toString());
@@ -190,6 +229,12 @@ public class InvoiceService {
 		
 		return invoiceDao.saveInvoice(invoiceDO);
 		
+	}
+	
+	
+	public InvoiceDO getInvoiceDetails(String invNo){
+		LOGGER.info("InvoiceService::getInvoiceDetails()::start");
+		return invoiceDao.getInvoiceDetails(invNo);
 	}
 	
 }

@@ -19,7 +19,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import org.hibernate.annotations.Cascade;
-import org.hibernate.annotations.CascadeType;
+import javax.persistence.CascadeType;
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
 
@@ -142,10 +142,23 @@ public class InvoiceDO {
 	@Column(name="Created_Date")
 	Date createdDate;
 	
+	@OneToMany(mappedBy="invoiceDO",fetch=FetchType.EAGER,cascade= CascadeType.ALL)
+	List<InvoiceProductDO> invoiceProductDO=new ArrayList<>();
 	
 	
 	
 	
+	
+
+
+	public List<InvoiceProductDO> getInvoiceProductDO() {
+		return invoiceProductDO;
+	}
+
+	public void setInvoiceProductDO(List<InvoiceProductDO> invoiceProductDO) {
+		this.invoiceProductDO = invoiceProductDO;
+	}
+
 	public Date getCreatedDate() {
 		return createdDate;
 	}

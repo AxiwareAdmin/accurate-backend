@@ -34,6 +34,11 @@ public class InvoiceService {
 		return invoiceDao.getInvoiceList();
 	}
 	
+	public List<InvoiceDO> getInvoiceListByMonth(String month){
+		LOGGER.info("InvoiceService::getInvoiceListByMonth()::start");
+		return invoiceDao.getInvoiceListByMonth(month);
+	}
+	
 	public List<InvoiceProductDO> getInvoiceProductList(){
 		LOGGER.info("InvoiceService::getInvoiceProductList()::start");
 		return invoiceDao.getInvoiceProductList();
@@ -196,6 +201,16 @@ public class InvoiceService {
 	public InvoiceDO getInvoiceDetails(String invNo){
 		LOGGER.info("InvoiceService::getInvoiceDetails()::start");
 		return invoiceDao.getInvoiceDetails(invNo);
+	}
+	
+	public boolean DeleteInvoice(String invNo){
+		LOGGER.info("InvoiceService::DeleteInvoice()::start");
+		return invoiceDao.DeleteInvoice(invNo);
+	}
+	
+	public boolean cloneInvoice(String invNo){
+		LOGGER.info("InvoiceService::cloneInvoice()::start");
+		return invoiceDao.cloneInvoice(invNo);
 	}
 	
 }

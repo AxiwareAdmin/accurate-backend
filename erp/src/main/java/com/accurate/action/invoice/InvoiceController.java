@@ -227,4 +227,20 @@ public class InvoiceController {
 		}
 			return new ResponseEntity<String>(jsonObj.toString(),HttpStatus.OK);
 	}
+	
+	@GetMapping(value="/sendmail")
+	@CrossOrigin(origins={"*"})
+	public ResponseEntity<?> sendMail(@QueryParam("invNo") String invNo , @QueryParam("custName") String custName ){
+		boolean flag=false;
+				flag = invoiceService.sendMail(invNo , custName);
+		
+		JSONObject jsonObj=new JSONObject();
+		
+		if(flag) {
+			jsonObj.put("res", "sucess");
+		}else {
+			jsonObj.put("res", "failure");
+		}
+			return new ResponseEntity<String>(jsonObj.toString(),HttpStatus.OK);
+	}
 }

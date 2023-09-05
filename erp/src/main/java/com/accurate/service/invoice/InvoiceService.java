@@ -18,6 +18,7 @@ import com.accurate.model.invoice.CustomerDO;
 import com.accurate.model.invoice.InvoiceDO;
 import com.accurate.model.invoice.InvoiceProductDO;
 import com.accurate.model.invoice.ProductDO;
+import com.accurate.utility.mail.SendMail;
 
 @Service
 public class InvoiceService {
@@ -25,6 +26,9 @@ public class InvoiceService {
 
 	@Autowired
 	InvoiceDao invoiceDao;
+	
+	@Autowired
+	SendMail sendmail;
 	
 	public List<CustomerDO> getCustometList() {
 		LOGGER.info("InvoiceService::getCustometList()::start");
@@ -249,6 +253,25 @@ public class InvoiceService {
 	public boolean cloneInvoice(String invNo){
 		LOGGER.info("InvoiceService::cloneInvoice()::start");
 		return invoiceDao.cloneInvoice(invNo);
+	}
+	
+	public boolean sendMail(String invNo , String custName){
+		LOGGER.info("InvoiceService::sendMail()::start");
+		boolean flag = false;
+		try {
+		
+				String toMailId = invoiceDao.getCustomerEmail(custName);
+				String subject = "Testing mail for Invoice No "+invNo;
+				String body ="<html><body><p>Dear "+custName+"</p><br/>Please check your invoice is in paid state"
+						+ ".please check invoice is correct or not <br/>Thanks & regards,<br/>"
+						+ "<br/>axiware.techonology@gmail.com</body></html>";
+				
+				flag = sendmail.SendMails(toMailId,subject,body);
+		}catch(Exception e) {
+			LOGGER.error("Exception occured in invoiceservice :: sendMail()");
+			return flag;
+		}
+		return flag;
 	}
 	
 }

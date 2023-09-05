@@ -4,8 +4,10 @@ import java.math.BigDecimal;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 import org.apache.log4j.Logger;
 import org.hibernate.Criteria;
@@ -13,6 +15,8 @@ import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
+import org.hibernate.criterion.Projection;
+import org.hibernate.criterion.Projections;
 import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
@@ -242,13 +246,15 @@ public List<InvoiceDO> getInvoiceListByMonth(String month){
 	public boolean cloneInvoice(String invNo){
 		LOGGER.info("InvoiceDao :: cloneInvoice :: Start ");
 		boolean flag=false;
-		InvoiceDO invDO=null;
+		InvoiceDO invDO= new InvoiceDO();
+		//InvoiceDO invtemp = null;
 		try {
 			
 			Session session=getSession();
 			Criteria criteria=session.createCriteria(InvoiceDO.class);
 			criteria.add(Restrictions.eq("invoiceNo",invNo));
-			invDO = (InvoiceDO)criteria.uniqueResult();
+			invDO = (InvoiceDO)criteria.list().get(0);
+			if(invDO.getInvoiceNo().contains("/")) {
 			String [] invnoarr  = invDO.getInvoiceNo().split("/");
 			Integer num = Integer.parseInt(invnoarr[2])+1;
 			num.toString().length();
@@ -258,11 +264,28 @@ public List<InvoiceDO> getInvoiceListByMonth(String month){
 			}
 			String fInvNo =fInv+num.toString();
 			invDO.setInvoiceNo(fInvNo);
-			invDO.setInvoiceId(10);
+			}else {
+				Integer fInvNo =Integer.parseInt(invDO.getInvoiceNo())+1;
+				invDO.setInvoiceNo(fInvNo.toString());
+			}
+			
+			List<InvoiceProductDO> productdo = new ArrayList<InvoiceProductDO>();
+			for(InvoiceProductDO temp : invDO.getInvoiceProductDO()) {
+				InvoiceProductDO invprod = new InvoiceProductDO();
+				invprod = temp;
+				invprod.setInvoiceDO(invDO);
+				invprod.setInvoiceProductId(null);
+				productdo.add(invprod);
+			}
+			invDO.getInvoiceProductDO().clear();
+			invDO.setInvoiceProductDO(productdo);
+			
+			session.clear();
 			closeSession(session);
 			
-			flag = saveCloneInv(invDO);
 			
+			flag  = saveCloneInv(invDO);
+
 			
 		}catch(Exception e) {
 			LOGGER.error("Exception occured in InvoiceDao :: cloneInvoice ");
@@ -291,6 +314,29 @@ public List<InvoiceDO> getInvoiceListByMonth(String month){
 		
 		LOGGER.info("InvoiceDao::saveCloneInv::end");
 		return true;
+		
+	}
+	
+	public String getCustomerEmail(String custName) {
+		
+        LOGGER.info("InvoiceDao::getCustomerEmail::start");
+        String email = "";
+		try {
+			
+			Session session=getSession();
+			Criteria criteria=session.createCriteria(CustomerDO.class);
+			criteria.add(Restrictions.eq("customerName",custName));
+			Projection p1 = Projections.property("email");
+			criteria.setProjection(p1);
+			email=(String) criteria.uniqueResult();
+			
+		}catch(Exception e) {
+			LOGGER.info("Exception occured in invoiceDao::getCustomerEmail::"+e);
+			return email;
+		}
+		
+		LOGGER.info("InvoiceDao::getCustomerEmail::end");
+		return email;
 		
 	}
 

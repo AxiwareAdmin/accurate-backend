@@ -1,12 +1,15 @@
 package com.accurate.dao.invoice;
 
 import java.math.BigDecimal;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 import java.util.Map;
 
 import org.apache.log4j.Logger;
 import org.hibernate.Criteria;
+import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -104,6 +107,23 @@ public class InvoiceDao {
 		return invoiceList;
 	}
 	
+public List<InvoiceDO> getInvoiceListByMonth(String month){
+		LOGGER.info("InvoiceDao :: getInvoiceListByMonth :: Start ");
+		List<InvoiceDO> invoiceList = new ArrayList<InvoiceDO>();
+		try {
+			
+			Session session=getSession();
+			Criteria criteria=session.createCriteria(InvoiceDO.class);
+			criteria.add(Restrictions.eq("month",month));
+			invoiceList=criteria.list();
+			
+			
+		}catch(Exception e) {
+			LOGGER.error("Exception occured in InvoiceDao :: getInvoiceListByMonth ");
+		}
+		LOGGER.info("InvoiceDao :: getInvoiceListByMonth method end");
+		return invoiceList;
+	}
 	public List<ProductDO> getInvoiceProductList(){
 		LOGGER.info("InvoiceDao :: getInvoiceProductList :: Start ");
 		List<ProductDO> invoiceProductList = new ArrayList<ProductDO>();
@@ -153,7 +173,8 @@ public class InvoiceDao {
 		
 		try {
 			invoiceDO.setInvoiceProductId(1);
-			invoiceDO.setMonth("Dec");
+			Calendar cal = Calendar.getInstance();
+			invoiceDO.setMonth(new SimpleDateFormat("MMM").format(cal.getTime()));
 			invoiceDO.setCity("Mum");
 			invoiceDO.setIgstValue(new BigDecimal(1));
 			Session session=getSession();
@@ -191,6 +212,88 @@ public class InvoiceDao {
 		LOGGER.info("InvoiceDao :: getInvoiceDetails method end");
 		return invDO;
 	}
+	
+	@Transactional
+	public boolean DeleteInvoice(String invNo){
+		LOGGER.info("InvoiceDao :: DeleteInvoice :: Start ");
+		boolean flag=false;
+		InvoiceDO invDo = null;
+		try {
+			
+			Session session=getSession();
+			Query query= session.createSQLQuery("delete from Invoice where Invoice_No ='"+invNo+"'");
+			/*Criteria criteria=session.createCriteria(InvoiceDO.class);
+			criteria.add(Restrictions.eq("invoiceNo",invNo));
+			invDo = (InvoiceDO)criteria.uniqueResult();
+			session.delete(invDo);*/
+			query.executeUpdate();
+			flag = true;
+			
+		}catch(Exception e) {
+			LOGGER.error("Exception occured in InvoiceDao :: DeleteInvoice ");
+			flag = false;
+		}
+		LOGGER.info("InvoiceDao :: DeleteInvoice method end");
+		return flag;
+	}
+	
+	
+	@Transactional
+	public boolean cloneInvoice(String invNo){
+		LOGGER.info("InvoiceDao :: cloneInvoice :: Start ");
+		boolean flag=false;
+		InvoiceDO invDO=null;
+		try {
+			
+			Session session=getSession();
+			Criteria criteria=session.createCriteria(InvoiceDO.class);
+			criteria.add(Restrictions.eq("invoiceNo",invNo));
+			invDO = (InvoiceDO)criteria.uniqueResult();
+			String [] invnoarr  = invDO.getInvoiceNo().split("/");
+			Integer num = Integer.parseInt(invnoarr[2])+1;
+			num.toString().length();
+			String fInv = "";
+			for(int i=0;i<invnoarr[2].length()-num.toString().length();i++) {
+				fInv = fInv+"0";
+			}
+			String fInvNo =fInv+num.toString();
+			invDO.setInvoiceNo(fInvNo);
+			invDO.setInvoiceId(10);
+			closeSession(session);
+			
+			flag = saveCloneInv(invDO);
+			
+			
+		}catch(Exception e) {
+			LOGGER.error("Exception occured in InvoiceDao :: cloneInvoice ");
+			flag = false;
+		}
+		LOGGER.info("InvoiceDao :: cloneInvoice method end");
+		return flag;
+	}
+	
+	@Transactional
+	public boolean saveCloneInv(InvoiceDO invdo) {
+	
+        LOGGER.info("InvoiceDao::saveCloneInv::start");
+		try {
+			
+			Session session=getSession();
+			Transaction tx=session.beginTransaction();
+			session.save(invdo);
+			session.flush();
+			tx.commit();
+			
+		}catch(Exception e) {
+			LOGGER.info("Exception occured in invoiceDao::saveCloneInv::"+e);
+			return false;
+		}
+		
+		LOGGER.info("InvoiceDao::saveCloneInv::end");
+		return true;
+		
+	}
+
 	
 	
 	

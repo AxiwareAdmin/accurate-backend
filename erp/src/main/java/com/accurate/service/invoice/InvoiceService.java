@@ -14,6 +14,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestBody;
 
 import com.accurate.dao.invoice.InvoiceDao;
+import com.accurate.model.MnanageMaster.DocumentSeqMasterDO;
 import com.accurate.model.invoice.CustomerDO;
 import com.accurate.model.invoice.InvoiceDO;
 import com.accurate.model.invoice.InvoiceProductDO;
@@ -38,6 +39,11 @@ public class InvoiceService {
 	public List<InvoiceDO> getInvoiceList(){
 		LOGGER.info("InvoiceService::getInvoiceList()::start");
 		return invoiceDao.getInvoiceList();
+	}
+	
+	public String getInvNo(){
+		LOGGER.info("InvoiceService::getInvNo()::start");
+		return invoiceDao.getInvNo();
 	}
 	
   public List<InvoiceDO> getInvoiceListByMonth(String month){
@@ -68,6 +74,8 @@ public class InvoiceService {
 		
 		
 		Object invoiceNo=inputJson.get("invoiceNo");
+		
+		Object invoiceId=inputJson.get("invoiceId");
 		
 		Object sgstValue=inputJson.get("sgstValue");
 		
@@ -141,6 +149,10 @@ public class InvoiceService {
 				
 				invoiceProduct.setInvoiceDO(invoiceDO);
 				
+				invoiceProduct.setRegisterId("11111");
+				
+				invoiceProduct.setUserId("22222");
+				
 				invoiceProducts.add(invoiceProduct);
 			}
 			invoiceDO.setInvoiceProductDO(invoiceProducts);
@@ -148,6 +160,9 @@ public class InvoiceService {
 		
 		if(invoiceNo!=null)
 		invoiceDO.setInvoiceNo(invoiceNo.toString());
+		
+		if(invoiceId != null)
+			invoiceDO.setInvoiceId(Integer.parseInt(invoiceId.toString()));
 		
 		if(sgstValue!=null) {
 			invoiceDO.setSgstValue(new BigDecimal(sgstValue.toString()));
@@ -273,5 +288,56 @@ public class InvoiceService {
 		}
 		return flag;
 	}
+	
+	
+    public String saveDocMaster(Map<String, Object> inputJson) throws ParseException {
+		
+		SimpleDateFormat sdf=new SimpleDateFormat("dd/mm/yyyy");
+		
+		DocumentSeqMasterDO documentmasterdo = new DocumentSeqMasterDO();
+		
+		
+		Object documentId=inputJson.get("DocumentId");
+		
+		Object documentName=inputJson.get("DocumentName");
+		
+		Object prefix1=inputJson.get("Prefix1");
+		
+		Object prefix2=inputJson.get("Prefix2");
+		
+		Object series=inputJson.get("Series");
+		
+		Object modeVal=inputJson.get("ModeVal");
+		
+		if(documentId != null && !documentId.equals(""))
+			documentmasterdo.setDocumentSeqId(Integer.parseInt(documentId.toString()));
+		if(documentName != null && !documentName.equals(""))
+			documentmasterdo.setDocumentName(documentName.toString());
+		if(prefix1 != null && !prefix1.equals(""))
+			documentmasterdo.setPrefix1(prefix1.toString());
+		if(prefix2 != null && !prefix2.equals(""))
+			documentmasterdo.setPrefix2(prefix2.toString());
+		if(series != null && !series.equals(""))
+			documentmasterdo.setSeries(series.toString());
+		if(modeVal != null && !modeVal.equals(""))
+			documentmasterdo.setMode(modeVal.toString());
+		
+		
+		return invoiceDao.saveDocMaster(documentmasterdo);
+		
+    }
+    
+    
+    public List<DocumentSeqMasterDO> getDocMaster(){
+		LOGGER.info("InvoiceService::getDocMaster()::start");
+		return invoiceDao.getDocMaster();
+	}
+    
+    public boolean deleteDocMaster(String docId){
+		LOGGER.info("InvoiceService::deleteDocMaster()::start");
+		return invoiceDao.deleteDocMaster(docId);
+	}
+		
+	
 	
 }

@@ -4,8 +4,10 @@ import java.math.BigDecimal;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 import org.apache.log4j.Logger;
 import org.hibernate.Criteria;
@@ -13,6 +15,9 @@ import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
+import org.hibernate.criterion.MatchMode;
+import org.hibernate.criterion.Projection;
+import org.hibernate.criterion.Projections;
 import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
@@ -21,6 +26,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.accurate.action.invoice.InvoiceController;
+import com.accurate.model.MnanageMaster.DocumentSeqMasterDO;
 import com.accurate.model.invoice.CustomerDO;
 import com.accurate.model.invoice.InvoiceDO;
 import com.accurate.model.invoice.ProductDO;
@@ -107,7 +113,48 @@ public class InvoiceDao {
 		return invoiceList;
 	}
 	
-public List<InvoiceDO> getInvoiceListByMonth(String month){
+	public String getInvNo(){
+		LOGGER.info("InvoiceDao :: getInvNo :: Start ");
+		String invNo="";
+		DocumentSeqMasterDO documentSeqMasterDO = null;
+		InvoiceDO invoiceDO = null;
+		String tempInv = "";
+		try {
+			
+			Session session=getSession();
+			Criteria criteria=session.createCriteria(DocumentSeqMasterDO.class);
+			criteria.add(Restrictions.eq("documentName","Invoice"));
+			documentSeqMasterDO=(DocumentSeqMasterDO) criteria.uniqueResult();
+			
+			if(documentSeqMasterDO != null) {
+			String matchVal = documentSeqMasterDO.getPrefix1() +"/"+documentSeqMasterDO.getPrefix2()+"/";
+			Session session1=getSession();
+			Criteria criteria1=session1.createCriteria(InvoiceDO.class);
+			criteria1.add(Restrictions.like("invoiceNo",matchVal,MatchMode.ANYWHERE));
+			Projection p1 = Projections.max("invoiceNo");
+			criteria1.setProjection(p1);
+			 tempInv=(String) criteria1.uniqueResult();
+			}
+			System.out.println("max invoice no :"+tempInv);
+			if(tempInv != null && !tempInv.equalsIgnoreCase("")) {
+				int len = (tempInv.split("/")[2]).length();
+				Integer nextInvNo = Integer.parseInt((tempInv.split("/")[2]))+1;
+				invNo = documentSeqMasterDO.getPrefix1() +"/"+documentSeqMasterDO.getPrefix2()+"/"+String.format("%04d", nextInvNo);
+			}else {
+				invNo = documentSeqMasterDO.getPrefix1() +"/"+documentSeqMasterDO.getPrefix2()+"/"+documentSeqMasterDO.getSeries();
+			}
+			
+			return invNo;
+			
+			
+		}catch(Exception e) {
+			LOGGER.error("Exception occured in InvoiceDao :: getInvNo "+e);
+		}
+		LOGGER.info("InvoiceDao :: getInvNo method end");
+		return invNo;
+	}
+	
+    public List<InvoiceDO> getInvoiceListByMonth(String month){
 		LOGGER.info("InvoiceDao :: getInvoiceListByMonth :: Start ");
 		List<InvoiceDO> invoiceList = new ArrayList<InvoiceDO>();
 		try {
@@ -145,7 +192,9 @@ public List<InvoiceDO> getInvoiceListByMonth(String month){
 	public static void main(String[] args) {
 		try {
 			
-			ProductDO productDO=null;
+			InvoiceDao t = new InvoiceDao();
+						
+			/*ProductDO productDO=null;
 			
 			InvoiceDao invoiceDao=new InvoiceDao();
 				
@@ -160,7 +209,7 @@ public List<InvoiceDO> getInvoiceListByMonth(String month){
 				tx.commit();
 				session.flush();
 				session.close();
-				
+				*/
 			
 		}catch(Exception e) {
 			System.out.println("Exception:"+e);
@@ -172,6 +221,8 @@ public List<InvoiceDO> getInvoiceListByMonth(String month){
 		LOGGER.info("InvoiceDao::saveInvoice::start");
 		
 		try {
+			InvoiceDO tmp = invoiceDO;
+			InvoiceDO invDO = null;
 			invoiceDO.setInvoiceProductId(1);
 			Calendar cal = Calendar.getInstance();
 			invoiceDO.setMonth(new SimpleDateFormat("MMM").format(cal.getTime()));
@@ -179,7 +230,7 @@ public List<InvoiceDO> getInvoiceListByMonth(String month){
 			invoiceDO.setIgstValue(new BigDecimal(1));
 			Session session=getSession();
 			Transaction tx=session.beginTransaction();
-			session.save(invoiceDO);
+			session.saveOrUpdate(invoiceDO);
 			session.flush();
 			tx.commit();
 			
@@ -242,27 +293,40 @@ public List<InvoiceDO> getInvoiceListByMonth(String month){
 	public boolean cloneInvoice(String invNo){
 		LOGGER.info("InvoiceDao :: cloneInvoice :: Start ");
 		boolean flag=false;
-		InvoiceDO invDO=null;
+		InvoiceDO invDO= new InvoiceDO();
+		List<InvoiceDO> invtemp = new ArrayList<>();
+		Integer gInvNo = 0;
+		String fInvNo="";
 		try {
+			
+			invtemp = getInvoiceList();
+			gInvNo = invtemp.size();
 			
 			Session session=getSession();
 			Criteria criteria=session.createCriteria(InvoiceDO.class);
 			criteria.add(Restrictions.eq("invoiceNo",invNo));
-			invDO = (InvoiceDO)criteria.uniqueResult();
-			String [] invnoarr  = invDO.getInvoiceNo().split("/");
-			Integer num = Integer.parseInt(invnoarr[2])+1;
-			num.toString().length();
-			String fInv = "";
-			for(int i=0;i<invnoarr[2].length()-num.toString().length();i++) {
-				fInv = fInv+"0";
-			}
-			String fInvNo =fInv+num.toString();
+			invDO = (InvoiceDO)criteria.list().get(0);
+			
+			fInvNo = getInvNo();
 			invDO.setInvoiceNo(fInvNo);
-			invDO.setInvoiceId(10);
+					
+			List<InvoiceProductDO> productdo = new ArrayList<InvoiceProductDO>();
+			for(InvoiceProductDO temp : invDO.getInvoiceProductDO()) {
+				InvoiceProductDO invprod = new InvoiceProductDO();
+				invprod = temp;
+				invprod.setInvoiceDO(invDO);
+				invprod.setInvoiceProductId(null);
+				productdo.add(invprod);
+			}
+			invDO.getInvoiceProductDO().clear();
+			invDO.setInvoiceProductDO(productdo);
+			
+			session.clear();
 			closeSession(session);
 			
-			flag = saveCloneInv(invDO);
 			
+			flag  = saveCloneInv(invDO);
+
 			
 		}catch(Exception e) {
 			LOGGER.error("Exception occured in InvoiceDao :: cloneInvoice ");
@@ -293,6 +357,108 @@ public List<InvoiceDO> getInvoiceListByMonth(String month){
 		return true;
 		
 	}
+	
+	public String getCustomerEmail(String custName) {
+		
+        LOGGER.info("InvoiceDao::getCustomerEmail::start");
+        String email = "";
+		try {
+			
+			Session session=getSession();
+			Criteria criteria=session.createCriteria(CustomerDO.class);
+			criteria.add(Restrictions.eq("customerName",custName));
+			Projection p1 = Projections.property("email");
+			criteria.setProjection(p1);
+			email=(String) criteria.uniqueResult();
+			
+		}catch(Exception e) {
+			LOGGER.info("Exception occured in invoiceDao::getCustomerEmail::"+e);
+			return email;
+		}
+		
+		LOGGER.info("InvoiceDao::getCustomerEmail::end");
+		return email;
+		
+	}
+	
+//	public String getFinYear() {
+//		LOGGER.info("InvoiceDao::getFinYear::start");
+//		String fY = "";
+//		try {
+//			
+//			int year = Calendar.getInstance().get(Calendar.YEAR);
+//
+//		    int month = Calendar.getInstance().get(Calendar.MONTH) + 1;
+//	
+//		    if (month < 3) {
+//		        fY = (year - 1) + "-" + String.valueOf(year).substring(2);
+//		    } else {
+//		        fY =  year + "-" + String.valueOf((year + 1)).substring(2);
+//		    }
+//			
+//		}catch(Exception e) {
+//			LOGGER.info("Exception occured in invoiceDao::getFinYear::"+e);
+//		}
+//		return fY;
+//	}
+//	
+	
+	
+	public List<DocumentSeqMasterDO> getDocMaster(){
+		LOGGER.info("InvoiceDao :: getDocMaster :: Start ");
+		
+		List<DocumentSeqMasterDO> documentSeqMasterDO = new ArrayList<DocumentSeqMasterDO>();
+		try {
+			
+			Session session=getSession();
+			Criteria criteria=session.createCriteria(DocumentSeqMasterDO.class);
+			documentSeqMasterDO=criteria.list();
+			
+			
+		}catch(Exception e) {
+			LOGGER.error("Exception occured in InvoiceDao :: getDocMaster ");
+		}
+		LOGGER.info("InvoiceDao :: getDocMaster method end");
+		return documentSeqMasterDO;
+	}
+	
+	public String saveDocMaster(DocumentSeqMasterDO docmentseqmasterdo) {
+		LOGGER.info("InvoiceDao::saveDocMaster::start");
+		
+		try {
+			
+			Session session=getSession();
+			Transaction tx=session.beginTransaction();
+			session.saveOrUpdate(docmentseqmasterdo);
+			session.flush();
+			tx.commit();
+			
+		}catch(Exception e) {
+			LOGGER.info("Exception occured in invoiceDao::saveDocMaster::"+e);
+			return "failure";
+		}
+		return "success";
+	}
+	
+	
+	public boolean deleteDocMaster(String docId){
+		LOGGER.info("InvoiceDao :: deleteDocMaster :: Start ");
+		boolean flag=false;
+		try {
+			
+			Session session=getSession();
+			Query query= session.createSQLQuery("delete from document_seq_master where document_seq_Id ='"+docId+"'");
+			query.executeUpdate();
+			flag = true;
+			
+		}catch(Exception e) {
+			LOGGER.error("Exception occured in InvoiceDao :: deleteDocMaster ");
+			flag = false;
+		}
+		LOGGER.info("InvoiceDao :: deleteDocMaster method end");
+		return flag;
+	}
+	
 
 	
 	

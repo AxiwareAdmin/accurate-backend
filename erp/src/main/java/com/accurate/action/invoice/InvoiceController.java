@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-
+import com.accurate.model.MnanageMaster.DocumentSeqMasterDO;
 import com.accurate.model.invoice.CustomerDO;
 import com.accurate.model.invoice.InvoiceDO;
 import com.accurate.model.invoice.ProductDO;
@@ -78,6 +78,20 @@ public class InvoiceController {
 			return new ResponseEntity<String>(jsonObj.toString(),HttpStatus.OK);
 		}
 	}
+	@GetMapping(value="/getInvNo")
+	@CrossOrigin(origins={"*"})
+	public ResponseEntity<?> getInvNo(){
+		String invNo=invoiceService.getInvNo();
+		if(invNo!=null && !invNo.equalsIgnoreCase("")) {
+		return new ResponseEntity<String>(invNo,HttpStatus.OK);
+		}
+		else {
+			JSONObject jsonObj=new JSONObject();
+			jsonObj.put("res", "Invoices are not found");
+			return new ResponseEntity<String>(jsonObj.toString(),HttpStatus.OK);
+		}
+	}
+	
 	
 	@GetMapping(value="/invoices/{month}")
 	@CrossOrigin(origins={"*"})
@@ -227,4 +241,70 @@ public class InvoiceController {
 		}
 			return new ResponseEntity<String>(jsonObj.toString(),HttpStatus.OK);
 	}
+	
+	@GetMapping(value="/sendmail")
+	@CrossOrigin(origins={"*"})
+	public ResponseEntity<?> sendMail(@QueryParam("invNo") String invNo , @QueryParam("custName") String custName ){
+		boolean flag=false;
+				flag = invoiceService.sendMail(invNo , custName);
+		
+		JSONObject jsonObj=new JSONObject();
+		
+		if(flag) {
+			jsonObj.put("res", "sucess");
+		}else {
+			jsonObj.put("res", "failure");
+		}
+			return new ResponseEntity<String>(jsonObj.toString(),HttpStatus.OK);
+	}
+	
+	@PostMapping(value="/saveDocMaster",consumes= {"application/json"})
+	@CrossOrigin(origins={"*"})
+	public ResponseEntity<?> saveDocMaster(@RequestBody Map<String, Object> inputJson) throws ParseException{
+		
+		System.out.print(inputJson);
+		
+		String msg=invoiceService.saveDocMaster(inputJson);
+		
+		JSONObject jsonObj=new JSONObject();
+		if(msg.equals("success")) {
+		jsonObj.put("res", "success");
+		}else {
+			jsonObj.put("res", "failure");
+		}
+		return new ResponseEntity<String>(jsonObj.toString(),HttpStatus.OK);
+		
+	}
+	
+	@GetMapping(value="/getDocMaster")
+	@CrossOrigin(origins={"*"})
+	public ResponseEntity<?> getDocMaster(){
+		List<DocumentSeqMasterDO> documentSeqMaster=invoiceService.getDocMaster();
+		if(documentSeqMaster!=null && documentSeqMaster.size() > 0) {
+		return new ResponseEntity<List<DocumentSeqMasterDO>>(documentSeqMaster,HttpStatus.OK);
+		}
+		else {
+			JSONObject jsonObj=new JSONObject();
+			jsonObj.put("res", "document seq master data not found");
+			return new ResponseEntity<String>(jsonObj.toString(),HttpStatus.OK);
+		
+	  }
+	}
+	
+	@GetMapping(value="/deleteDocMaster")
+	@CrossOrigin(origins={"*"})
+	public ResponseEntity<?> deleteDocMaster(@QueryParam("docId") String docId){
+		boolean flag=invoiceService.deleteDocMaster(docId);
+		
+		JSONObject jsonObj=new JSONObject();
+		
+		if(flag) {
+			jsonObj.put("res", "sucess");
+		}else {
+			jsonObj.put("res", "failure");
+		}
+			return new ResponseEntity<String>(jsonObj.toString(),HttpStatus.OK);
+	}
+	
+
 }

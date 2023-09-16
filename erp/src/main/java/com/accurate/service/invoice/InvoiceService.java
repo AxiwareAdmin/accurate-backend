@@ -161,7 +161,7 @@ public class InvoiceService {
 		if(invoiceNo!=null)
 		invoiceDO.setInvoiceNo(invoiceNo.toString());
 		
-		if(invoiceId != null)
+		if(invoiceId != null && !invoiceId.equals(""))
 			invoiceDO.setInvoiceId(Integer.parseInt(invoiceId.toString()));
 		
 		if(sgstValue!=null) {

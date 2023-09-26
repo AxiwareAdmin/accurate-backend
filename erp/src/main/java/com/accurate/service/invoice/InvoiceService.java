@@ -124,6 +124,11 @@ public class InvoiceService {
 			for(Map<String,Object> tempProd:invoiceProd) {
 				InvoiceProductDO invoiceProduct=new InvoiceProductDO();
 				
+				if(tempProd.get("id").toString() != null &&
+						!tempProd.get("id").toString().equalsIgnoreCase("")){
+				invoiceProduct.setInvoiceProductId(Integer.parseInt(tempProd.get("id").toString()));
+				}
+				
 				invoiceProduct.setProductName(tempProd.get("productName").toString());
 				
 				invoiceProduct.setProductDescription(tempProd.get("description").toString());

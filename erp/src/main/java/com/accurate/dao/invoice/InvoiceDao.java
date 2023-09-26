@@ -253,12 +253,12 @@ public class InvoiceDao {
 			
 			Session session=getSession();
 			Criteria criteria=session.createCriteria(InvoiceDO.class);
-			criteria.add(Restrictions.eq("invoiceNo",invNo));
+			criteria.add(Restrictions.eq("invoiceId",Integer.parseInt(invNo)));
 			invDO=(InvoiceDO)criteria.uniqueResult();
 			
 			
 		}catch(Exception e) {
-			LOGGER.error("Exception occured in InvoiceDao :: getInvoiceDetails ");
+			LOGGER.error("Exception occured in InvoiceDao :: getInvoiceDetails "+e);
 		}
 		LOGGER.info("InvoiceDao :: getInvoiceDetails method end");
 		return invDO;
@@ -272,7 +272,7 @@ public class InvoiceDao {
 		try {
 			
 			Session session=getSession();
-			Query query= session.createSQLQuery("delete from Invoice where Invoice_No ='"+invNo+"'");
+			Query query= session.createSQLQuery("delete from Invoice where Invoice_Id ='"+Integer.parseInt(invNo)+"'");
 			/*Criteria criteria=session.createCriteria(InvoiceDO.class);
 			criteria.add(Restrictions.eq("invoiceNo",invNo));
 			invDo = (InvoiceDO)criteria.uniqueResult();
@@ -281,7 +281,7 @@ public class InvoiceDao {
 			flag = true;
 			
 		}catch(Exception e) {
-			LOGGER.error("Exception occured in InvoiceDao :: DeleteInvoice ");
+			LOGGER.error("Exception occured in InvoiceDao :: DeleteInvoice "+e);
 			flag = false;
 		}
 		LOGGER.info("InvoiceDao :: DeleteInvoice method end");
@@ -304,7 +304,7 @@ public class InvoiceDao {
 			
 			Session session=getSession();
 			Criteria criteria=session.createCriteria(InvoiceDO.class);
-			criteria.add(Restrictions.eq("invoiceNo",invNo));
+			criteria.add(Restrictions.eq("invoiceId",Integer.parseInt(invNo)));
 			invDO = (InvoiceDO)criteria.list().get(0);
 			
 			fInvNo = getInvNo();
@@ -329,7 +329,7 @@ public class InvoiceDao {
 
 			
 		}catch(Exception e) {
-			LOGGER.error("Exception occured in InvoiceDao :: cloneInvoice ");
+			LOGGER.error("Exception occured in InvoiceDao :: cloneInvoice "+e);
 			flag = false;
 		}
 		LOGGER.info("InvoiceDao :: cloneInvoice method end");
